@@ -79,14 +79,24 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Giacinta&#39;s blogs">
-<meta property="og:url" content="http://example.com/index.html">
+<meta name="description" content="php序列化与反序列化PHP类与对象 序列化就是将一个对象转换成字符串。字符串包括，属性名，属性值，属性类型和该对象对应的类名。 反序列化则相反将字符串重新恢复成对象 对象的序列化利于对象的 保存和传输 ，也可以让多个文件共享对象。  PHP Magic 方法PHP类中一般会包含一些特殊的函数叫做magic函数，这些函数以双斜划线开始，他们的主要作用是在某些情况下，自动调用，以保证程序的健壮性，但">
+<meta property="og:type" content="article">
+<meta property="og:title" content="序列化与反序列化">
+<meta property="og:url" content="http://example.com/2021/05/25/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96-1/index.html">
 <meta property="og:site_name" content="Giacinta&#39;s blogs">
+<meta property="og:description" content="php序列化与反序列化PHP类与对象 序列化就是将一个对象转换成字符串。字符串包括，属性名，属性值，属性类型和该对象对应的类名。 反序列化则相反将字符串重新恢复成对象 对象的序列化利于对象的 保存和传输 ，也可以让多个文件共享对象。  PHP Magic 方法PHP类中一般会包含一些特殊的函数叫做magic函数，这些函数以双斜划线开始，他们的主要作用是在某些情况下，自动调用，以保证程序的健壮性，但">
 <meta property="og:locale">
+<meta property="og:image" content="https://api2.mubu.com/v3/document_image/aebd9e90-c94e-4387-8398-6ed34c927ac3-12072792.jpg">
+<meta property="og:image" content="https://api2.mubu.com/v3/document_image/44539d87-7d2d-4072-b45a-7ef88e37dd83-12072792.jpg">
+<meta property="og:image" content="https://api2.mubu.com/v3/document_image/b2ea8753-a172-400a-a7e8-571719fc22a2-12072792.jpg">
+<meta property="og:image" content="https://api2.mubu.com/v3/document_image/74fd31be-5d8f-4613-b17a-924fb5d39662-12072792.jpg">
+<meta property="og:image" content="https://api2.mubu.com/v3/document_image/9fac7837-a3c8-4462-a534-547239b5e98b-12072792.jpg">
+<meta property="article:published_time" content="2021-05-25T13:05:00.000Z">
+<meta property="article:modified_time" content="2021-05-25T13:06:07.020Z">
 <meta property="article:author" content="Giacinta">
 <meta property="article:tag" content="CTF,DeepLearning">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://api2.mubu.com/v3/document_image/aebd9e90-c94e-4387-8398-6ed34c927ac3-12072792.jpg">
 
 
 
@@ -116,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://example.com/"/>
+  <link rel="canonical" href="http://example.com/2021/05/25/序列化与反序列化-1/"/>
 
 
 
 
 
-  <title>Giacinta's blogs</title>
+  <title>序列化与反序列化 | Giacinta's blogs</title>
   
 
 
@@ -141,8 +151,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -269,9 +278,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -301,9 +310,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/05/25/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96-1/" itemprop="url">序列化与反序列化</a></h1>
+          <h1 class="post-title" itemprop="name headline">序列化与反序列化</h1>
         
 
         <div class="post-meta">
@@ -384,9 +391,7 @@
       
 
       
-        
-          
-            <h1 id="php序列化与反序列化"><a href="#php序列化与反序列化" class="headerlink" title="php序列化与反序列化"></a>php序列化与反序列化</h1><h2 id="PHP类与对象"><a href="#PHP类与对象" class="headerlink" title="PHP类与对象"></a>PHP类与对象</h2><ul>
+        <h1 id="php序列化与反序列化"><a href="#php序列化与反序列化" class="headerlink" title="php序列化与反序列化"></a>php序列化与反序列化</h1><h2 id="PHP类与对象"><a href="#PHP类与对象" class="headerlink" title="PHP类与对象"></a>PHP类与对象</h2><ul>
 <li>序列化就是将一个对象转换成字符串。字符串包括，属性名，属性值，属性类型和该对象对应的类名。</li>
 <li>反序列化则相反将字符串重新恢复成对象</li>
 <li>对象的序列化利于对象的 <strong>保存和传输</strong> ，也可以让<strong>多个文件共享对象</strong>。</li>
@@ -871,8 +876,6 @@ file_exists($filename);   // 漏洞点
 </li>
 </ul>
 
-          
-        
       
     </div>
     
@@ -889,175 +892,43 @@ file_exists($filename);   // 漏洞点
       
 
       
-
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/20/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Giacinta's blogs">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/05/20/hello-world/" itemprop="url">Hello World</a></h1>
+        <div class="post-widgets">
         
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-05-20T23:18:56+08:00">
-                2021-05-20
-              </time>
-            
+        
 
-            
-
-            
-          </span>
-
+        
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  75
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
       
       
 
       
-        
-          
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/05/20/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+          <span class="post-nav-divider"></span>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -1067,10 +938,11 @@ file_exists($filename);   // 漏洞点
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -1078,6 +950,10 @@ file_exists($filename);   // 漏洞点
 
 
           
+
+  
+
+
 
         </div>
         
@@ -1098,8 +974,17 @@ file_exists($filename);   // 漏洞点
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1145,6 +1030,22 @@ file_exists($filename);   // 漏洞点
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#php%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96"><span class="nav-number">1.</span> <span class="nav-text">php序列化与反序列化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1"><span class="nav-number">1.1.</span> <span class="nav-text">PHP类与对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP-Magic-%E6%96%B9%E6%B3%95"><span class="nav-number">1.2.</span> <span class="nav-text">PHP Magic 方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#PHP%E5%B8%B8%E8%A7%81%E7%9A%84magic%E6%96%B9%E6%B3%95"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">PHP常见的magic方法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP%E5%AF%B9%E8%B1%A1%E5%BA%8F%E5%88%97%E5%8C%96"><span class="nav-number">1.3.</span> <span class="nav-text">PHP对象序列化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="nav-number">1.3.0.1.</span> <span class="nav-text">访问控制修饰符</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#php%E7%9A%84%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96"><span class="nav-number">1.4.</span> <span class="nav-text">php的反序列化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96POP%E9%93%BE"><span class="nav-number">1.4.1.</span> <span class="nav-text">反序列化POP链</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%EF%BC%88%E5%B8%B8%E8%A7%84%EF%BC%89"><span class="nav-number">1.5.</span> <span class="nav-text">PHP反序列化漏洞（常规）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%95%E8%BF%87%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95%E7%9A%84%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E"><span class="nav-number">1.5.0.1.</span> <span class="nav-text">绕过魔法方法的反序列化漏洞</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#wakeup"><span class="nav-number">1.5.0.1.1.</span> <span class="nav-text">__wakeup()</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#destruct"><span class="nav-number">1.5.0.1.2.</span> <span class="nav-text">__destruct()</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#toString-NaN"><span class="nav-number">1.5.0.1.3.</span> <span class="nav-text">__toString()</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Error%E7%B1%BB"><span class="nav-number">1.5.0.1.4.</span> <span class="nav-text">Error类</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP%E4%B8%ADSession%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89"><span class="nav-number">1.6.</span> <span class="nav-text">PHP中Session反序列化（重点）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Session%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8"><span class="nav-number">1.6.1.</span> <span class="nav-text">Session序列化漏洞利用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP-Session%E4%B8%AD%E7%9A%84%E5%BA%8F%E5%88%97%E5%8C%96%E5%8D%B1%E5%AE%B3"><span class="nav-number">1.6.2.</span> <span class="nav-text">PHP Session中的序列化危害</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#phar%E4%BC%AA%E5%8D%8F%E8%AE%AE%E8%A7%A6%E5%8F%91php%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96"><span class="nav-number">1.6.3.</span> <span class="nav-text">phar伪协议触发php反序列化</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Phar%E5%86%85%E7%BD%AE%E6%96%B9%E6%B3%95"><span class="nav-number">1.6.3.0.1.</span> <span class="nav-text">Phar内置方法</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8%E6%9D%A1%E4%BB%B6"><span class="nav-number">1.6.3.0.1.1.</span> <span class="nav-text">漏洞利用条件</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1297,6 +1198,10 @@ file_exists($filename);   // 漏洞点
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
